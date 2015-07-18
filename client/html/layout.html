@@ -1,14 +1,17 @@
 <template name="layout">
-	<p> this is the layout</P>
+	<title>Investi</title>
+	<nav role="navigation">
+		<!--<div class="navbar-header">Investi</div>-->
+		<ul class="nav nav-tabs">
+			<li> <a href="{{pathFor 'Children'}}">Children</a></li>
+			<li> <a href="{{pathFor 'Parents'}}">Parents</a></li>
+			<li> <a href="{{pathFor 'Dashboard'}}">Dashboard</a> </li>
 
-	<ul>
-		<li> <a href="{{pathFor 'Children'}}">Children</a></li>
-		<li> <a href="{{pathFor 'Parents'}}">Parents</a></li>
-		<li> <a href="{{pathFor 'Dashboard'}}">Dashboard</a> </li>
+		</ul>
+	</nav>
 
-	</ul>
-
-
+	<div class="container">
 	{{> yield}}
+	</div>
 
 </template>
