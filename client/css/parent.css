@@ -1,0 +1,33 @@
+body {
+	background-color: #c1f0c1;
+}
+
+nav {
+	background-color: white;
+}
+
+.row-centered {
+	text-align: center;
+}
+
+.col-centered {
+	display: inline-block;
+}
+
+.btn-pay {
+	padding: 50px 50px;
+	border-radius: 100px;
+	font-size: 45px;
+	border-color: #263026;
+	border-width: 5px;
+}
+
+.btn-pay:hover {
+	background-color: #607860;
+	border-color: #263026;
+	color: white;
+}
+
+#allowanceInput {
+	padding: 6px 12px;
+}
