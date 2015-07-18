@@ -1,3 +1,28 @@
+/**
+ Copyright (c) 2014 BrightPoint Consulting, Inc.
+
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+ */
+
 function radialProgress(parent) {
     var _data=null,
         _duration= 1000,
@@ -230,84 +255,4 @@ function radialProgress(parent) {
 
     return component;
 
-}
-
-
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
-
-  Template.Children.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.Children.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-
-  Template.Children.onRendered(function() {
-    var div1=d3.select(document.getElementById('div1'));
-    var div2=d3.select(document.getElementById('div2'));
-    var div3=d3.select(document.getElementById('div3'));
-    var div4=d3.select(document.getElementById('div4'));
-
-    start();
-
-    function onClick1() {
-        deselect();
-        div1.attr("class","selectedRadial");
-    }
-
-    function onClick2() {
-        deselect();
-        div2.attr("class","selectedRadial");
-    }
-
-    function onClick3() {
-        deselect();
-        div3.attr("class","selectedRadial");
-    }
-
-    function labelFunction(val,min,max) {
-
-    }
-
-    function deselect() {
-        div1.attr("class","radial");
-        div2.attr("class","radial");
-        div3.attr("class","radial");
-    }
-
-    function start() {
-
-        var rp1 = radialProgress(document.getElementById('div1'))
-                .label("RADIAL 1")
-                .onClick(onClick1)
-                .diameter(150)
-                .value(78)
-                .render();
-
-        var rp2 = radialProgress(document.getElementById('div2'))
-                .label("RADIAL 2")
-                .onClick(onClick2)
-                .diameter(150)
-                .value(132)
-                .render();
-
-        var rp3 = radialProgress(document.getElementById('div3'))
-                .label("RADIAL 3")
-                .onClick(onClick3)
-                .diameter(150)
-                .minValue(100)
-                .maxValue(200)
-                .value(150)
-                .render();
-
-    }
-  });
 }
