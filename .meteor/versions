@@ -41,6 +41,7 @@ mrt:bootstrap-3@0.3.8
 mrt:paypal@1.1.1
 observe-sequence@1.0.6
 ordered-dict@1.0.3
+patrickml:braintree@1.0.2
 random@1.0.3
 reactive-dict@1.1.0
 reactive-var@1.0.5
