@@ -56,6 +56,21 @@ p {
 	color: white;
 }
 
+.btn-deposit {
+	padding: 15px 15px;
+	border-radius: 50px;	
+	font-size: 20px;
+	font-weight: 200;
+	border-color: #263026;
+	border-width: 2px;
+}
+
+.btn-deposit:hover {
+	background-color: #607860;
+	border-color: #263026;
+	color: white;
+}
+
 #allowanceInput {
 	padding: 6px 12px;
 	font-size: 50px;
