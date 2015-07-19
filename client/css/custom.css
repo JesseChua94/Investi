@@ -96,6 +96,16 @@ p {
 	color: white;
 }
 
+.projection .col {
+	text-align: center;
+	font-size: 20px;
+	border-right: 1px solid black;
+}
+
+.projection .col:lastchild {
+	border-right: none;
+}
+
 /* Children */
 .btn-see-investments {
 	padding: 25px 25px;
