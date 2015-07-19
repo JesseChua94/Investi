@@ -1,0 +1,145 @@
+body {
+	background-color: #c1f0c1;
+}
+
+nav {
+	background-color: white;
+}
+
+h1, h2 {
+	font-weight: 200;
+}
+
+p {
+	font-size: 16px;
+}
+
+.navbar-default {
+	background-color: #68b268;
+	color: #394839;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #394839;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #394839;
+}
+
+.row-centered {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.col-centered {
+	display: inline-block;
+}
+
+/* Parents */
+.btn-pay {
+	padding: 50px 50px;
+	border-radius: 100px;
+	font-size: 45px;
+	font-weight: 200;
+	border-color: #263026;
+	border-width: 5px;
+}
+
+.btn-pay:hover {
+	background-color: #607860;
+	border-color: #263026;
+	color: white;
+}
+
+.btn-deposit {
+	padding: 15px 15px;
+	border-radius: 50px;	
+	font-size: 20px;
+	font-weight: 200;
+	border-color: #263026;
+	border-width: 2px;
+}
+
+.btn-deposit:hover {
+	background-color: #607860;
+	border-color: #263026;
+	color: white;
+}
+
+#allowanceInput {
+	padding: 6px 12px;
+	font-size: 50px;
+	text-align: center;
+}
+
+.money::before {
+	content: "$";
+}
+
+.btn-allowance {
+	padding: 50px 50px;
+	border-radius: 100px;
+	font-size: 45px;
+	font-weight: 200;
+	border-color: #263026;
+	border-width: 5px;
+}
+
+.btn-allowance:hover {
+	background-color: #607860;
+	border-color: #263026;
+	color: white;
+}
+
+.projection .col {
+	text-align: center;
+	font-size: 20px;
+	border-right: 1px solid black;
+}
+
+.projection .col:lastchild {
+	border-right: none;
+}
+
+/* Children */
+.btn-see-investments {
+	padding: 25px 25px;
+	border-radius: 50px;
+	font-size: 30px;
+	font-weight: 200;
+	border-color: #263026;
+	border-width: 5px;
+}
+
+.btn-see-investments:hover {
+	background-color: #607860;
+	border-color: #263026;
+	color: white;
+}
+
+/* Investments */
+
+.investmentItem {
+	border-bottom: 1px solid #263026;
+	padding-bottom: 25px;
+}
+
+.investmentContent {
+	text-align: left;
+}
+
+/* Dashboard */
+.dashboardContent {
+	text-align: left;
+}
+
+.dashboard-date-picker input{
+	width: 10%;
+	text-align: right;
+	padding: 0 10px;
+}
