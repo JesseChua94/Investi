@@ -1,7 +1,27 @@
 <template name="parents">
-
-
-		<p> this is the parents page</p>
-
-
-</template>
+	<div class="parents-container">
+		<div class="row row-centered">
+			<div class="col-md-12 col-centered">
+				<h1>Committed funds: <span class="money" id="committedFunds">50</span></h1>
+			</div>
+			<div class="wallet">
+				<h1>Current funds: <span class="money" id="currentFunds">250</span></h1>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-12 col-centered">
+				<button class="btn btn-default btn-pay">Pay</button>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-12 col-centered">
+				<span id="allowanceInput">$ <input id="allowanceInput" type="number" placeholder="Allowance"></span>
+			</div>
+		</div>
+		<div class="row row-centered">
+			<div class="col-md-12 col-centered">
+				<button class="btn btn-default btn-allowance">Give Allowance</button>
+			</div>
+		</div>
+	</div>
+</template> 
