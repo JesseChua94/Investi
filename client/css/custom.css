@@ -74,3 +74,14 @@ p {
 .investmentContent {
 	text-align: left;
 }
+
+/* Dashboard */
+.dashboardContent {
+	text-align: left;
+}
+
+.dashboard-date-picker input{
+	width: 10%;
+	text-align: right;
+	padding: 0 10px;
+}
